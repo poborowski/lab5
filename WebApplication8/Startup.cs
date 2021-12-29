@@ -18,6 +18,8 @@ namespace WebApplication8
 {
     public class Startup
     {
+
+        private const string APIKEYNAME = "ApiKey";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -42,7 +44,30 @@ namespace WebApplication8
                     Contact = new OpenApiContact { Name = "RT", Email = "r@rmail.com" },
                     License = new OpenApiLicense { Name = "Github", Url = new System.Uri("http://github.com/rt/license") }
                 });
+                c.AddSecurityDefinition(APIKEYNAME, new OpenApiSecurityScheme()
+                {
+                    In = ParameterLocation.Header,
+                    Name = APIKEYNAME,
+                    Type = SecuritySchemeType.ApiKey,
+                    Description = "Prosze podaæ zakupiony klucz do API."
+                });
+
+                var key = new OpenApiSecurityScheme()
+                {
+                    Reference = new OpenApiReference
+                    {
+                        Type = ReferenceType.SecurityScheme,
+                        Id = APIKEYNAME
+                    },
+                    In = ParameterLocation.Header
+                };
+
+                var requirement = new OpenApiSecurityRequirement
+                    { { key, new List<string>() }};
+
+                c.AddSecurityRequirement(requirement);
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

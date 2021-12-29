@@ -1,0 +1,30 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "zadanie-Startup",
+      "appliesTo": "WebMvc/Startup.cs",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "zadanie-WebMvc",
+      "appliesTo": "WebMvc/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "zadanie-Startup",
+      "appliesTo": "WebMvc/Startup.cs",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "zadanie-WebMvc",
+      "appliesTo": "WebMvc/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "zadanie-lab8",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

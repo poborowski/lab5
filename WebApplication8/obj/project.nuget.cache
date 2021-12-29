@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zvAJcqyCG9cTwvdfuvLDi8j6/dLQSHEHw0OE74YWJ85uDetS1qS9HJ83FNAomaOY322ubTr2LKp4mlWh5NiUlg==",
+  "dgSpecHash": "nBagcXsDPK68mREVNGEdSYI4sNfsKjCqsQJ8iY1iTXKKfMEVDvaTA46uhQSase5moNiYuBkSlYDjfJMiGsA0rA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bartek\\source\\repos\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
+  "projectFilePath": "C:\\Users\\Bartek\\source\\repos\\lab8\\WebApplication8\\WebApplication8.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bartek\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
